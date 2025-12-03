@@ -1,0 +1,75 @@
+/* Paleta azul inspirada en teoría del color (fondo profundo, acentos claros) */
+body {
+	color: #E8F6FF; /* texto claro sobre fondo azul oscuro */
+	background: linear-gradient(180deg, #061526 0%, #08345a 60%); /* fondo en degradado azul profundo */
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 60px;
+	margin: 0;
+	padding: 20px 0;
+	color: #BEE6FF; /* azul pálido para el encabezado */
+	text-shadow: 2px 2px 6px rgba(2,18,36,0.7);
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #04243b; /* barra de navegación en azul muy oscuro */
+}
+
+li {
+	float: left;
+	border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+li a {
+	display: block;
+	color: #E8F6FF; /* links en tono claro para buen contraste */
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #054b7a; /* hover ligeramente más claro */
+}
+
+.active {
+	background-color: #1E88E5; /* acento azul brillante para la opción activa */
+	color: #ffffff;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+address{
+	margin: 0;
+	padding: 20px 0;
+	color: #A9D7FF; /* texto secundario en azul suave */
+}
+
+.semester-message {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: Georgia, serif;
+	color: #FFD700; /* oro para destacar */
+	margin: 10px 5px;
+	padding: 5px;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Ajustes responsivos básicos */
+@media (max-width: 600px) {
+	h1 { font-size: 36px; }
+	li { float: none; }
+}
